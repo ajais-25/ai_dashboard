@@ -1,8 +1,14 @@
+"use client";
+
 import DashboardNav from "@/components/key-metrics/dashboard-nav";
 import TotalRevenueCard from "@/components/key-metrics/total-revenue-card";
 import NewCustomersCard from "@/components/key-metrics/new-customers-card";
 import ActiveAccountsCard from "@/components/key-metrics/active-accounts-card";
 import GrowthRateCard from "@/components/key-metrics/growth-rate-card";
+import SessionsChart from "@/components/charts/SessionsChart";
+import PageViewsBarChart from "@/components/charts/PageViewsBarChart";
+import CustomizedDataGrid from "@/components/CustomizedDataGrid";
+import ChartUserByCountry from "@/components/charts/ChartUserByCountry";
 
 export default function Dashboard() {
   return (
@@ -21,9 +27,20 @@ export default function Dashboard() {
           <GrowthRateCard />
         </div>
 
-        {/* Additional content can be added here */}
-        <div className="text-center text-muted-foreground">
-          <p>More dashboard content coming soon...</p>
+        {/* Charts Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+          <SessionsChart />
+          <PageViewsBarChart />
+        </div>
+
+        {/* Data Grid and User Chart Section */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+          <div className="lg:col-span-2">
+            <CustomizedDataGrid />
+          </div>
+          <div className="lg:col-span-1">
+            <ChartUserByCountry />
+          </div>
         </div>
       </div>
     </div>
