@@ -45,71 +45,71 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --background: rgb(249, 250, 251);
+  --foreground: rgb(17, 24, 39);
+  --card: rgb(255, 255, 255);
+  --card-foreground: rgb(17, 24, 39);
+  --popover: rgb(255, 255, 255);
+  --popover-foreground: rgb(17, 24, 39);
+  --primary: rgb(59, 130, 246);
+  --primary-foreground: rgb(255, 255, 255);
+  --secondary: rgb(243, 244, 246);
+  --secondary-foreground: rgb(17, 24, 39);
+  --muted: rgb(243, 244, 246);
+  --muted-foreground: rgb(107, 114, 128);
+  --accent: rgb(243, 244, 246);
+  --accent-foreground: rgb(17, 24, 39);
+  --destructive: rgb(239, 68, 68);
+  --border: rgb(229, 231, 235);
+  --input: rgb(229, 231, 235);
+  --ring: rgb(59, 130, 246);
+  --chart-1: rgb(59, 130, 246);
+  --chart-2: rgb(16, 185, 129);
+  --chart-3: rgb(245, 158, 11);
+  --chart-4: rgb(239, 68, 68);
+  --chart-5: rgb(139, 92, 246);
+  --sidebar: rgb(255, 255, 255);
+  --sidebar-foreground: rgb(17, 24, 39);
+  --sidebar-primary: rgb(59, 130, 246);
+  --sidebar-primary-foreground: rgb(255, 255, 255);
+  --sidebar-accent: rgb(243, 244, 246);
+  --sidebar-accent-foreground: rgb(17, 24, 39);
+  --sidebar-border: rgb(229, 231, 235);
+  --sidebar-ring: rgb(59, 130, 246);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: rgb(17, 24, 39);
+  --foreground: rgb(243, 244, 246);
+  --card: rgb(31, 41, 55);
+  --card-foreground: rgb(243, 244, 246);
+  --popover: rgb(31, 41, 55);
+  --popover-foreground: rgb(243, 244, 246);
+  --primary: rgb(96, 165, 250);
+  --primary-foreground: rgb(17, 24, 39);
+  --secondary: rgb(55, 65, 81);
+  --secondary-foreground: rgb(243, 244, 246);
+  --muted: rgb(55, 65, 81);
+  --muted-foreground: rgb(156, 163, 175);
+  --accent: rgb(55, 65, 81);
+  --accent-foreground: rgb(243, 244, 246);
+  --destructive: rgb(248, 113, 113);
+  --border: rgba(75, 85, 99, 0.3);
+  --input: rgba(75, 85, 99, 0.5);
+  --ring: rgb(96, 165, 250);
+  --chart-1: rgb(96, 165, 250);
+  --chart-2: rgb(52, 211, 153);
+  --chart-3: rgb(251, 191, 36);
+  --chart-4: rgb(248, 113, 113);
+  --chart-5: rgb(167, 139, 250);
+  --sidebar: rgb(31, 41, 55);
+  --sidebar-foreground: rgb(243, 244, 246);
+  --sidebar-primary: rgb(96, 165, 250);
+  --sidebar-primary-foreground: rgb(17, 24, 39);
+  --sidebar-accent: rgb(55, 65, 81);
+  --sidebar-accent-foreground: rgb(243, 244, 246);
+  --sidebar-border: rgba(75, 85, 99, 0.3);
+  --sidebar-ring: rgb(96, 165, 250);
 }
 
 @layer base {
@@ -119,4 +119,88 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* Material-UI DataGrid dark mode styles */
+.dark .MuiDataGrid-root {
+  background-color: rgb(31, 41, 55);
+  border-color: rgba(75, 85, 99, 0.3);
+  color: rgb(243, 244, 246);
+}
+
+.dark .MuiDataGrid-cell {
+  border-color: rgba(75, 85, 99, 0.3);
+  color: rgb(243, 244, 246);
+}
+
+.dark .MuiDataGrid-columnHeader {
+  background-color: rgb(17, 24, 39);
+  border-color: rgba(75, 85, 99, 0.3);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.dark .MuiDataGrid-footerContainer {
+  border-color: rgba(75, 85, 99, 0.3);
+  background-color: rgb(17, 24, 39);
+  color: rgb(243, 244, 246);
+}
+
+.dark .MuiDataGrid-row:hover {
+  background-color: rgba(55, 65, 81, 0.8);
+}
+
+.dark .MuiDataGrid-row.Mui-selected {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+.dark .MuiDataGrid-row.Mui-selected:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Light mode overrides */
+.MuiDataGrid-root {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(209, 213, 219);
+  color: rgb(17, 24, 39);
+  border-width: 1px;
+}
+
+.MuiDataGrid-cell {
+  border-color: rgb(209, 213, 219);
+  color: rgb(17, 24, 39);
+  border-bottom: 1px solid rgb(209, 213, 219);
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: rgb(243, 244, 246);
+  border-color: rgb(209, 213, 219);
+  color: rgb(17, 24, 39);
+  font-weight: 600;
+  border-bottom: 2px solid rgb(209, 213, 219);
+}
+
+.MuiDataGrid-footerContainer {
+  border-color: rgb(209, 213, 219);
+  background-color: rgb(249, 250, 251);
+  color: rgb(17, 24, 39);
+  border-top: 1px solid rgb(209, 213, 219);
+}
+
+.MuiDataGrid-row {
+  border-bottom: 1px solid rgb(229, 231, 235);
+  transition: background-color 0.15s ease-in-out;
+}
+
+.MuiDataGrid-row:hover {
+  background-color: rgb(229, 246, 253) !important;
+  cursor: pointer;
+}
+
+.MuiDataGrid-row.Mui-selected {
+  background-color: rgba(59, 130, 246, 0.08);
+}
+
+.MuiDataGrid-row.Mui-selected:hover {
+  background-color: rgba(59, 130, 246, 0.15) !important;
 }
