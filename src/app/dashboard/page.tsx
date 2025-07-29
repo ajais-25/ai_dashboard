@@ -16,7 +16,7 @@ export default function Dashboard() {
       <div className="mx-auto max-w-7xl">
         <DashboardNav />
         <h1 className="text-3xl font-bold text-foreground mb-8">
-          AI Dashboard
+          AI-Powered Analytics Dashboard
         </h1>
 
         {/* Metrics Header Section */}
