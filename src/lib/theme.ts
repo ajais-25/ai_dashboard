@@ -51,8 +51,11 @@ export const createAppTheme = (mode: "light" | "dark") => {
       },
       divider: isLight ? "rgba(229, 231, 235, 1)" : "rgba(75, 85, 99, 0.3)",
       action: {
-        hover: isLight ? "rgba(243, 244, 246, 1)" : "rgba(55, 65, 81, 0.8)",
-        selected: isLight ? "rgba(239, 246, 255, 1)" : "rgba(55, 65, 81, 1)",
+        hover: isLight ? "rgba(243, 244, 246, 1)" : "rgba(55, 65, 81, 0.4)",
+        selected: isLight
+          ? "rgba(239, 246, 255, 1)"
+          : "rgba(59, 130, 246, 0.3)",
+        hoverOpacity: 0.4,
       },
       success: {
         main: isLight ? "rgb(34, 197, 94)" : "rgb(74, 222, 128)",
