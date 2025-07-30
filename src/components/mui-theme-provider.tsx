@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { useTheme } from "next-themes";
 import { createAppTheme } from "@/lib/theme";

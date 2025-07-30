@@ -23,18 +23,19 @@ function getDaysInMonth(month: number, year: number) {
   return days;
 }
 
-function renderSparklineCell(params: GridCellParams<SparkLineData, any>) {
+function renderSparklineCell(params: GridCellParams) {
   const data = getDaysInMonth(4, 2024);
   const { value, colDef } = params;
+  const sparklineData = value as SparkLineData;
 
-  if (!value || value.length === 0) {
+  if (!sparklineData || sparklineData.length === 0) {
     return null;
   }
 
   return (
     <div style={{ display: "flex", alignItems: "center", height: "100%" }}>
       <SparkLineChart
-        data={value}
+        data={sparklineData}
         width={colDef.computedWidth || 100}
         height={32}
         plotType="bar"
@@ -59,23 +60,23 @@ function renderStatus(status: "Online" | "Offline") {
   return <Chip label={status} color={colors[status]} size="small" />;
 }
 
-export function renderAvatar(
-  params: GridCellParams<{ name: string; color: string }, any, any>
-) {
-  if (params.value == null) {
+export function renderAvatar(params: GridCellParams) {
+  const avatarData = params.value as { name: string; color: string } | null;
+
+  if (avatarData == null) {
     return "";
   }
 
   return (
     <Avatar
       sx={{
-        backgroundColor: params.value.color,
+        backgroundColor: avatarData.color,
         width: "24px",
         height: "24px",
         fontSize: "0.85rem",
       }}
     >
-      {params.value.name.toUpperCase().substring(0, 1)}
+      {avatarData.name.toUpperCase().substring(0, 1)}
     </Avatar>
   );
 }
@@ -87,7 +88,7 @@ export const columns: GridColDef[] = [
     headerName: "Status",
     flex: 0.5,
     minWidth: 80,
-    renderCell: (params) => renderStatus(params.value as any),
+    renderCell: (params) => renderStatus(params.value as "Online" | "Offline"),
   },
   {
     field: "users",

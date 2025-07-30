@@ -1,31 +1,4 @@
-import { createTheme, ThemeOptions } from "@mui/material/styles";
-
-// Helper function to convert CSS custom properties to RGB values
-const getCSSVariable = (variable: string) => {
-  if (typeof window !== "undefined") {
-    return getComputedStyle(document.documentElement)
-      .getPropertyValue(variable)
-      .trim();
-  }
-  return "";
-};
-
-// Helper function to convert oklch to rgb (approximate conversion)
-const oklchToRgb = (oklchValue: string): string => {
-  // This is a simplified conversion - for production, you might want a more accurate converter
-  // For now, we'll use fallback colors that match the design system
-  if (oklchValue.includes("oklch(1 0 0)")) return "255, 255, 255"; // white
-  if (oklchValue.includes("oklch(0.145 0 0)")) return "23, 23, 23"; // near black
-  if (oklchValue.includes("oklch(0.985 0 0)")) return "250, 250, 250"; // near white
-  if (oklchValue.includes("oklch(0.205 0 0)")) return "33, 33, 33"; // dark gray
-  if (oklchValue.includes("oklch(0.97 0 0)")) return "247, 247, 247"; // light gray
-  if (oklchValue.includes("oklch(0.556 0 0)")) return "115, 115, 115"; // medium gray
-  if (oklchValue.includes("oklch(0.922 0 0)")) return "235, 235, 235"; // border gray
-  if (oklchValue.includes("oklch(0.269 0 0)")) return "43, 43, 43"; // dark secondary
-
-  // Default fallback
-  return "128, 128, 128";
-};
+import { createTheme } from "@mui/material/styles";
 
 export const createAppTheme = (mode: "light" | "dark") => {
   const isLight = mode === "light";
