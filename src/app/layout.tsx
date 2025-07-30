@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ADmyBRAND",
+  title: "ADmyBRAND Insights",
   description: "A modern, visually stunning analytics dashboard",
 };
 
