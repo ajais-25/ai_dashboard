@@ -1,4 +1,4 @@
-# AI Usage Report Format
+# AI Usage Report
 
 ## AI Tools Used
 
